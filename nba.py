@@ -5,11 +5,11 @@ import pandas as pd
 import numpy as np
 from PIL import Image
 
-model = pickle.load(open("C:\\Users\\USER\\OneDrive\\Documents\\MY DATA SCIENCE DOCS\\STREAMLIT\\nba_model 2.pkl" , 'rb'))
+model = pickle.load(open("nba_model 2.pkl" , 'rb'))
 
 st.title('Basket Ball Predictor')
 st.sidebar.header('Players Date')
-Players_image = Image.open("C:\\Users\\USER\\OneDrive\\Documents\\MY DATA SCIENCE DOCS\STREAMLIT\\bskball.jpg")
+Players_image = Image.open("bskball.jpg")
 st.image(Players_image, width=300)
 
 def user_report():
